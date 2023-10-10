@@ -83,17 +83,19 @@
         </div>
     </section>
     <section id="Lugaryfecha">
-        <div id="lugar">
-            <img src="honolulu.jpg" alt="Honolulu">
-        </div>
-        <div id="datosLyF">
-            <h2 id="lugar">Bs As - Octubre</h2>
-            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
-                 Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de 
-                 Honolulu se refiere al área urbama en la costa sureste de la isla de Oahu, la ciudad y el condado de 
-                 Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 kmº 
-                 de superficie)</p>
-            <button id="Expandir" type="button">Conocé más</button>
+        <div class="row">
+            <div class="col-6" id="lugar">
+                <img src="honolulu.jpg" alt="Honolulu">
+            </div>
+            <div class="col-6" id="datosLyF">
+                <h2 id="lugar">Bs As - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
+                     Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de 
+                     Honolulu se refiere al área urbama en la costa sureste de la isla de Oahu, la ciudad y el condado de 
+                     Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 kmº 
+                     de superficie)</p>
+                <a id="bj" class="btn btn-outline-secondary text-white" href="https://turismo.buenosaires.gob.ar/es">Conocé más</a>
+            </div>
         </div>
     </section>
     <section id="Conviertete">
@@ -102,32 +104,40 @@
             <span>ORADOR</span></h2>
             <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
         </div>
-        <form class="" action="form" method="post">
-            <div>
-                <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required>
-            </div>
-            <div>
-                <input type="text" name="Apellido" id="apellido" placeholder="Apellido" required>
-            </div>
-            <div>
-                <textarea name="Tema" id="tema" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
-            </div>
-            <div>
-                <p>Recuerda incluir un título para tu charla</p>
-            </div>
-            <input id="enviar" type="submit" value="Enviar">
-        </form>
+        <div id="formulario" class="container my-5 mt-3">
+            <form class="row g-3" action="form" method="post">
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="Nombre" id="nombre" class="form-control" placeholder="Escriba su nombre" required>
+                </div>
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" name="Apellido" id="apellido" class="form-control" placeholder="Escriba su apellido" required>
+                </div>
+                <div class="col-12">
+                    <textarea name="Tema" id="tema" class="form-control" cols="20" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+                </div>
+                <div class="col-12">
+                    <p>Recuerda incluir un título para tu charla</p>
+                </div>
+                <div class="col-12">
+                    <button id="enviar" type="submit" class="btn btn-success form-control">Enviar</button>
+                </div>
+            </form>
+        </div>
     </section>
-    <footer>
-        <ul class="pdp">
-            <li>Preguntas frecuentes</li>
-            <li>Contáctanos</li>
-            <li>Prensa</li>
-            <li>Conferencias</li>
-            <li>Términos y condiciones</li>
-            <li>Privacidad</li>
-            <li>Estudiantes</li>
-        </ul>
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <ul class="list-unstyled">
+                <li class="d-inline-block px-4">Preguntas <br/> frecuentes</li>
+                <li class="d-inline-block px-4">Contáctanos</li>
+                <li class="d-inline-block px-4">Prensa</li>
+                <li class="d-inline-block px-4">Conferencias</li>
+                <li class="d-inline-block px-4">Términos y <br/> condiciones</li>
+                <li class="d-inline-block px-4">Privacidad</li>
+                <li class="d-inline-block px-4">Estudiantes</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

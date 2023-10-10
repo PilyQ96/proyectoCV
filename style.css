@@ -8,8 +8,7 @@
 
 .bg-image {
     background-image:
-     linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3) ),
-     url('ba1.jpg');
+    linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('ba1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
